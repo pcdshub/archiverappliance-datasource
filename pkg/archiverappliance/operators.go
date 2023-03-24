@@ -76,7 +76,7 @@ func createOperatorQuery(qm models.ArchiverQueryModel) (string, error) {
 
 	opr := qm.Operator
 	if opr == "" {
-		opr = "mean"
+		opr = "raw"
 	}
 
 	var opBuilder strings.Builder
